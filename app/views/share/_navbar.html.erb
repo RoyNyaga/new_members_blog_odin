@@ -1,0 +1,50 @@
+<!-- .navbar -->
+<nav class="navbar navbar-full navbar-light">
+	<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">
+	&#9776;
+	</button>
+	<a class="navbar-brand" href="#">
+	<img class="img-rounded" src="https://placehold.it/32/ffffff?text=B">
+	</a>
+	<div >
+		<ul class="nav navbar-nav pull-lg-right">
+			<li class="nav-item">
+				<li><%= link_to "Home", root_path %></li>
+			</li>
+			<li class="nav-item">
+				<li><%= link_to "All users", users_path %></li>
+			</li>
+			<li class="nav-item">
+				<li><%= link_to "Sign up", new_user_path %></li>
+			</li>
+
+			<li class="nav-item">
+				<li><%= link_to "Creat Post", new_micropost_path %></li>
+			</li>
+			<li class="nav-item">
+				<li><%= link_to "All post",microposts_path %></li>
+			</li>
+			
+
+			<% if logged_in? %>
+
+			<li class="nav-item">
+				<li><%= link_to "Logout", logout_path, method: :delete %></li>
+			</li>
+			<li class="nav-item">
+				<li><%= link_to "Profile", current_user %></li>
+			</li>
+			<% else %>
+			<li class="nav-item">
+				<li><%= link_to "Login", login_path %></li>
+			</li>
+			<% end %>
+
+			
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<!-- /.navbar -->

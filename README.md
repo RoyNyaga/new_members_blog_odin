@@ -1,0 +1,1 @@
+This is a microverse project and it consist of building a blogging app where everybody can view post but only signed in users can view posts with their author names on it. Singing up as a user will automatically sign in users. The Goal is the logic behind and not the interface.

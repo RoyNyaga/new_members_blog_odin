@@ -1,0 +1,10 @@
+<% @micropost.each do |m| %>
+<% if logged_in? %>
+<h1>Posted by <%= m.user.name %></h1>
+<% end %>
+<h3><%= m.content %></h3>
+<span class="timestamp">
+    Posted <%= time_ago_in_words(m.created_at) %> ago.
+  </span>
+  <hr>
+  <% end %>

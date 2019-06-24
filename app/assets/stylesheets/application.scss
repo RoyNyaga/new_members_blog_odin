@@ -1,0 +1,36 @@
+@import "bootstrap";
+
+@media (max-width: 62em) {
+	.navbar-nav {
+		padding-top: .425rem;
+		padding-left: 0.75rem;
+
+	}
+	.navbar-nav .nav-item {
+		float: none;
+		color: white;
+	}
+	.navbar-brand {
+		float: right;
+	}
+	.navbar-brand,
+	.navbar-nav .nav-item {
+		display: block;
+	}
+	.navbar-nav .nav-item + .nav-item {
+		margin-left: 0;
+	}
+	.dropdown-menu {
+		position: relative;
+		float: none;
+	}
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
